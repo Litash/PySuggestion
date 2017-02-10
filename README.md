@@ -17,11 +17,7 @@ git clone --depth 1 https://github.com/JetBrains/intellij-community.git
 4. Start IntelliJ, open project, point to the folder of this repo
 5. Go to File > Project Structure > SDKs
 6. locate the Community Edition that you installed. 
-
 You are not to give it the path to the source you downloaded, this step requires the path to the Community Edition of IntelliJ that you installed in the step 0.
-
 7. click on the sourcepath tab.
-
 Here you’ll add the path to the shallow git clone for the IntelliJ Community edition source you checked out. Click the plus button. Find the path in the dialog that appears. Click OK, then you should see a bunch of classes were added. Click apply and ok.
-
 8. Build and Run

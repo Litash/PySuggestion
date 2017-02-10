@@ -8,6 +8,6 @@ public class Test extends AnAction {
 
     @Override
     public void actionPerformed(AnActionEvent e) {
-        // TODO: insert action logic here
+        System.out.println("Menu item clicked!" + e.getPlace());
     }
 }

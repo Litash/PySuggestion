@@ -1,8 +1,8 @@
 <idea-plugin version="2">
-  <id>com.your.company.unique.plugin.id</id>
-  <name>Plugin display name here</name>
+  <id>com.pysuggestion.yichenlu.ucl.ac.uk</id>
+  <name>PySuggest</name>
   <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="y.lu.16@ucl.ac.uk" url="http://www.yichen.lu">Yichen Lu</vendor>
 
   <description><![CDATA[
       Enter short description for your plugin here.<br>
@@ -24,15 +24,28 @@
 
   -->
   <depends>com.intellij.modules.lang</depends>
+
   <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
+      <postStartupActivity implementation="TestStartupActivity"></postStartupActivity>
+      <inspectionToolProvider implementation="DemoInspectionToolProvider"/>
   </extensions>
 
   <actions>
     <!-- Add your actions here -->
-    <action id="pysuggestion.Test" class="Test" text="Test" description="Test for open a dialog">
-      <add-to-group group-id="FileMenu" anchor="first"/>
+    <action id="pysuggestion.Test" class="Test" text="PySuggestion" description="Test for adding item to menu">
+      <add-to-group group-id="ToolsMenu" anchor="first"/>
       <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt T"/>
+    </action>
+
+    <action id="EditorBasics.EditorIllustration" class="EditorIllustration" text="PySuggestion"
+          description="Illustrates how to plug an action in">
+      <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="shift alt O"/>
+    </action>
+
+    <action id="EditorBasics.EditorHandlerIllustration" class="EditorHandlerIllustration" text="PySuggestion2"
+            description="Illustrates how to plug an action in">
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
     </action>
   </actions>
 

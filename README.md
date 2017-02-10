@@ -6,11 +6,9 @@ Please follow this comperhensive [tutorial](http://bjorn.tipling.com/how-to-make
 
 ## Use this repo
 0. Do a shallow git clone of the IntelliJ IDEA Community Edition source code
-
 ``
 git clone --depth 1 https://github.com/JetBrains/intellij-community.git
 ``
-
 1. Clone this repo
 2. Install JDK 8 update 121
 3. Install IntelliJ Community Edition

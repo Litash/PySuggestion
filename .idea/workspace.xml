@@ -44,8 +44,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="119">
-                <caret line="7" column="76" lean-forward="false" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+              <first_editor relative-caret-position="340">
+                <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -721,7 +721,7 @@
       <workItem from="1486570893436" duration="1275000" />
       <workItem from="1486642836776" duration="8494000" />
       <workItem from="1486672214374" duration="430000" />
-      <workItem from="1486672661384" duration="11001000" />
+      <workItem from="1486672661384" duration="11089000" />
     </task>
     <task id="LOCAL-00001" summary="Added gitignore; Modified readme">
       <created>1485278367663</created>
@@ -744,11 +744,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486690738994</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="edit code usage instructions">
+      <created>1486690799951</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1486690799951</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25863000" />
+    <option name="totallyTimeSpent" value="25951000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -806,7 +813,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added gitignore; Modified readme" />
     <MESSAGE value="Modified readme, added code usage instructions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified readme, added code usage instructions" />
+    <MESSAGE value="edit code usage instructions" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit code usage instructions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1272,8 +1280,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="119">
-            <caret line="7" column="76" lean-forward="false" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+          <first_editor relative-caret-position="340">
+            <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
             <folding />
           </first_editor>
           <second_editor />

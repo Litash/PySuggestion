@@ -27,7 +27,8 @@
 
   <extensions defaultExtensionNs="com.intellij">
       <postStartupActivity implementation="TestStartupActivity"></postStartupActivity>
-      <inspectionToolProvider implementation="DemoInspectionToolProvider"/>
+      <completion.contributor language="any" implementationClass="completion.CompletionContributor"/>
+
   </extensions>
 
   <actions>

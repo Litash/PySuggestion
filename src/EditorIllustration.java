@@ -9,11 +9,11 @@ import com.intellij.openapi.project.Project;
  */
 public class EditorIllustration extends AnAction {
 
-//    static {
-//        final EditorActionManager actionManager = EditorActionManager.getInstance();
-//        final TypedAction typedAction = actionManager.getTypedAction();
+    static {
+        final EditorActionManager actionManager = EditorActionManager.getInstance();
+        final TypedAction typedAction = actionManager.getTypedAction();
 //        typedAction.setupHandler(new MyTypedHandler());
-//    }
+    }
 
     @Override
     public void update(final AnActionEvent e) {
@@ -40,7 +40,7 @@ public class EditorIllustration extends AnAction {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                document.replaceString(start, end, "Yoooo");
+                document.replaceString(start, end, "Foo");
             }
         };
         //Making the replacement

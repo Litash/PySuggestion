@@ -16,7 +16,7 @@ public class MyTypedHandler implements TypedActionHandler {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                document.insertString(0, "Typed\n");
+                document.insertString(0, "Bar\n");
             }
         };
         WriteCommandAction.runWriteCommandAction(project, runnable);

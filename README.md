@@ -13,7 +13,7 @@ git clone --depth 1 https://github.com/JetBrains/intellij-community.git
 #####2. Install JDK 8 update 121
 #####3. Install IntelliJ Community Edition
 #####4. Start IntelliJ, open project, point to the folder of this repo
-#####5. Go to File > Project Structure > SDKs
+#####5. Go to File > Project Structure > SDKs > IntelliJ IDEA Community Edition IC-163.12024.16 > Classpath
 #####6. locate the Community Edition that you installed. 
 You are not to give it the path to the source you downloaded, this step requires the path to the Community Edition of IntelliJ that you installed in the step 0.
 #####7. click on the sourcepath tab.

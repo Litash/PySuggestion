@@ -1,0 +1,57 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[top=1.5cm,bottom=1.5cm,left=2cm,right=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+
+\title{PySuggestion IntelliJ (PyCharm) plugin development journal}
+\author{Yichen Lu}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This is the paper's abstract
+\end{abstract}
+
+\section{Basic Tutorials}
+Action
+
+Short cut for actions
+
+Add Menu items, add-to-group
+
+Replace text
+
+Cursor place
+
+\section{Inspect ML part of codeInspect ML part of code}
+
+\subsection{Following instructions on GitHub and Run}
+
+\subsection{Try to get model from the code}
+Successfully run the code by following the instruction provided in their Git repo but one of the import file was missing. Email author.
+
+Author replied. Turns out they renamed the import file but forgot to rename the import code. Their code is not well written.
+
+\section{Code completion trigger and suggestion list}
+
+\subsection{Completion contributor}
+
+Hard to understand the structure of the code. Calls between classes.
+Read IntelliJ source code. \texttt{/completion/CompletionContributor.java}
+
+Using source code from idea-php-laravel-plugin as a reference to help me understand how to add item into the code suggestion list. Helpful class:
+\texttt{/src/fr/adrienbrault/idea/symfony2plugin/codeInsight/completion/CompletionContributor.java}
+
+Manage to change the funny text using \texttt{CompletionResultSet.addLookupAdvertisement(String)}
+
+
+\section{Conclusions}
+
+
+\end{document}

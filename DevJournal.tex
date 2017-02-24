@@ -50,8 +50,19 @@ Using source code from idea-php-laravel-plugin as a reference to help me underst
 
 Manage to change the funny text using \texttt{CompletionResultSet.addLookupAdvertisement(String)}
 
+\texttt{PsiElement} provide the lookup parameter our suggestions are based on
 
-\section{Conclusions}
+We need to recognize current lookup parameter and provide different suggestions.
+
+From source code comment of \texttt{CompletionContributor} class:
+
+"In \texttt{CompletionContributor} you will be given a {com.intellij.codeInsight.completion.CompletionResultSet} which will match \texttt{LookupElement}s against its prefix matcher \texttt{CompletionResultSet.getPrefixMatcher()}. If the default prefix calculated by IntelliJ IDEA doesn't satisfy you, you can obtain another result set via \texttt{com.intellij.codeInsight.completion.CompletionResultSet.withPrefixMatcher(PrefixMatcher)} and feed your lookup elements to the latter.
+
+It's one of the item's lookup strings (\texttt{LookupElement.getAllLookupStrings()} that is matched against prefix matcher."
+
+To get prefix of caret, use \texttt{CompletionResultSet.getPrefixMatcher().getPrefix()}
+
+Create LookupElement using LookupElementBuilder
 
 
 \end{document}

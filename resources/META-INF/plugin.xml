@@ -31,13 +31,12 @@
 
   </extensions>
 
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="My Sample Tool Window" icon="/UI/images/plus.png" anchor="right" factoryClass="UI.MyToolWindowFactory"/>
+  </extensions>
+
   <actions>
     <!-- Add your actions here -->
-    <action id="pysuggestion.Test" class="Test" text="PySuggestion" description="Test for adding item to menu">
-      <add-to-group group-id="ToolsMenu" anchor="first"/>
-      <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt T"/>
-    </action>
-
     <action id="EditorBasics.EditorIllustration" class="EditorIllustration" text="PySuggestion"
           description="Illustrates how to plug an action in">
       <add-to-group group-id="EditorPopupMenu" anchor="last"/>
@@ -47,6 +46,11 @@
     <action id="EditorBasics.EditorHandlerIllustration" class="EditorHandlerIllustration" text="PySuggestion2"
             description="Illustrates how to plug an action in">
       <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+    </action>
+    <action id="UI.CodeBaseSelector" class="UI.CodeBaseSelector" text="CodeBaseSelector"
+            description="Allows user to select the location of their codebase">
+      <add-to-group group-id="ToolsMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl C" second-keystroke="B"/>
     </action>
   </actions>
 

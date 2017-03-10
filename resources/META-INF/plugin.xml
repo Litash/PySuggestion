@@ -26,7 +26,7 @@
   <depends>com.intellij.modules.lang</depends>
 
   <extensions defaultExtensionNs="com.intellij">
-      <postStartupActivity implementation="TestStartupActivity"></postStartupActivity>
+    <postStartupActivity implementation="TestStartupActivity"/>
       <completion.contributor language="any" implementationClass="completion.CompletionContributor"/>
 
   </extensions>
